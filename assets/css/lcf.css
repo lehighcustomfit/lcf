@@ -23370,7 +23370,12 @@ a:hover .text-inherit {
     line-height: 1.5;
   }
 
-
   .pb-0b {
     padding-bottom: 0!important;
+  }
+
+  .subHeadBlock {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: block;
   }
