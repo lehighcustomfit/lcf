@@ -23374,8 +23374,24 @@ a:hover .text-inherit {
     padding-bottom: 0!important;
   }
 
+
   .subHeadBlock {
     padding-left: 15%;
     padding-right: 15%;
     display: block;
+  }
+  .trueFitColor {
+    color: #fff;
+    background-color: #d31245;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+  }
+  .compressionCirPics {
+    margin-top: 10px!important;margin-bottom:20px!important;display: inline-block;margin:0 auto;width:235px;max-width:75%;
+  }
+  .compressionPicLabels {
+    display:block;font-size: 1rem;font-weight:700;color:#000;
+  }
+  .apmaLogo {
+    max-height: 120px; 
   }
