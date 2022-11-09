@@ -496,6 +496,9 @@ progress {
     .display-6 {
         font-size: 2.5rem;
     }
+    .display-7 {
+        font-size: 2.25rem;
+    }
 }
 .list-unstyled {
     padding-left: 0;
