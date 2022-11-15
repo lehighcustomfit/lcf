@@ -4,12 +4,12 @@
 
 ## **PAGES**
 Services
+- Fitting Events ( */fitting-events* )
 - Employee ADF ( */automatic-data-feed* )
 - Command Center ( */command-center* )
 - Electronic Invoicing ( */electronic-invoicing* )
-- Ordering Events ( */ordering-events* )
-- Safety Pledge ( */safety-pledge* )
 - Payment Options ( */payment-options* )
+- Safety Pledge ( */safety-pledge* )
 - Warranty ( */warranty* )
 
 Resources
@@ -18,7 +18,6 @@ Resources
 - OS1st Compression Socks ( */compression-socks* )
 - Boot Size Guide ( */size-guide* )
 - Our History ( */history* )
-
 
 Wellness ( */wellness* )
 - Impacts of Unhealthy Feet ( */unhealthy-feet* )
@@ -44,7 +43,6 @@ Contact
 - The Right Safety Boots ( */right-safety-boots* )
 - Boots & Ladders Safety ( */boots-and-ladders-safety* )
 - Plantar Fasciitis & Work ( */plantar-fasciitis* )
-
 
 ## **DOCS**
 - Documentation ( */documentation* )  
