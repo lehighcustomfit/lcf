@@ -5,7 +5,7 @@
 ## **PAGES**
 Services
 - Fitting Events ( */fitting-events* )
-- Employee ADF ( */automatic-data-feed* )
+- Employee ADF ( */automated-data-feed* )
 - Command Center ( */command-center* )
 - Electronic Invoicing ( */electronic-invoicing* )
 - Payment Options ( */payment-options* )
