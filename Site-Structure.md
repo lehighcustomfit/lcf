@@ -18,6 +18,7 @@ Resources
 - OS1st Compression Socks ( */compression-socks* )
 - Boot Size Guide ( */size-guide* )
 - Our History ( */history* )
+- FAQ ( */faq* )
 
 Wellness ( */wellness* )
 - Impacts of Unhealthy Feet ( */unhealthy-feet* )
@@ -31,7 +32,6 @@ Contact
 - Email Sign Up ( */email* )
 - SMS Alerts ( */sms* )
 - Contact ( */contact* )
-- FAQ ( */faq* )
 
 ## **BLOG**
 **- Foundation of Your Success ( */foundation-of-success* )**  
