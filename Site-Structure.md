@@ -31,7 +31,7 @@ Wellness ( */wellness* )
 Contact
 - Email Sign Up ( */email* )
 - SMS Alerts ( */sms* )
-- Contact ( */contact* )
+- Contact Us ( */contact* )
 
 ## **BLOG**
 **- Foundation of Your Success ( */foundation-of-success* )**  
