@@ -23431,3 +23431,6 @@ a:hover .text-inherit {
   .maxWidth305 {
     max-width: 305px!important;
   }
+  .maxWidth100 {
+    max-width: 100%!important;
+  }
