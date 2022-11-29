@@ -23428,6 +23428,11 @@ a:hover .text-inherit {
     min-width: 100%;
     min-height: 100%;
   }
+
   .maxWidth100 {
     max-width: 100%!important;
+  }
+
+  .vertical-align-middle {
+    vertical-align: middle;
   }
