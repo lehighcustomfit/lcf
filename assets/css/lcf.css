@@ -23436,3 +23436,8 @@ a:hover .text-inherit {
   .vertical-align-middle {
     vertical-align: middle;
   }
+
+  .empStyling {
+    border-top: none!important;
+    border-bottom: 0.125rem solid!important;
+  }

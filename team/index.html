@@ -312,11 +312,12 @@
                         <option value="NM">New Mexico</option>
                         <option value="NV">Nevada</option>
                         <option value="NY">New York</option>
+                        <option value="NYLI">New York (Long Island)</option>
+                        <option value="NYC">New York (NYC)</option>
                         <option value="OH">Ohio</option>
                         <option value="OK">Oklahoma</option>
                         <option value="OR">Oregon</option>
                         <option value="PA">Pennsylvania</option>
-                        <option value="PR">Puerto Rico</option>
                         <option value="RI">Rhode Island</option>
                         <option value="SC">South Carolina</option>
                         <option value="SD">South Dakota</option>
@@ -337,14 +338,7 @@
         </form>
 		<div id="pro2" class="profile2 mx-auto" style="display: none;">
 			<table class="table table-striped mx-auto mt-4" id="employee1" border="2">
-<!-- 				<thead>
-                    <th scope="col"></th>
-					<th scope="col">Name</th>
-					<th scope="col">Title</th>
-                    <th scope="col">Email Address</th>
-					<th scope="col">Phone Number</th>
-				</thead> -->
-				<tbody id="tableContents">
+				<tbody>
 				</tbody>
 			</table>
 		</div>
@@ -1981,7 +1975,7 @@ function employeeDetails() {
 
     if (stateID != "") {
         // Add table heading
-        var tblHead = '<thead><th scope="col"></th><th scope="col">Name</th><th scope="col">Title</th><th scope="col">Email Address</th><th scope="col">Phone Number</th></thead>';
+        var tblHead = '<thead class="empStyling"><th scope="col"></th><th scope="col">Name</th><th scope="col">Title</th><th scope="col">Email Address</th><th scope="col">Phone Number</th></thead>';
         $(tblHead).appendTo("#employee1");
         for (emp in employee.EmployeeDetails) {
         	if(employee.EmployeeDetails[emp].stateID == stateID) {
