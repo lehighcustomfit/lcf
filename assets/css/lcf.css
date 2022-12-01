@@ -23441,3 +23441,7 @@ a:hover .text-inherit {
     border-top: none!important;
     border-bottom: 0.125rem solid!important;
   }
+
+  .iconResize {
+    font-size: 1.5rem;
+  }
