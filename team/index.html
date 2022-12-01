@@ -266,11 +266,61 @@
    <!-- ========== END HEADER ========== -->
    <main id="content" role="main">
     <!-- Hero -->
+    <!-- Hero -->
     <div class="overflow-hidden">
-        <div class="container content-space-t-3 content-space-t-lg-4">
+        <div class="container content-space-t-3">
+          <div class="row justify-content-lg-between align-items-md-center">
+            <div class="col-md-4 col-lg-5 mb-5 mb-lg-0">
+              <h1 class="display-5 mb-5">Get the right fit with the <span class="text-highlight-warning">right people</span></h1>
+  
+              <div class="border-top border-2 my-5" style="max-width: 5rem;"></div>
+  
+              <!-- Blockquote -->
+              <figure>
+                <p>As the innovation leader in managed PPE programs we are experts at helping companies significantly reduce accidents, lost-time incidents, workers compensation claims and costs by providing visibility to participation rates, styles, budgeting, eligibility, subsidies and so much more. Learn how today!</p>
+                <p>Have a basic question about our program? Ask a customer service rep or read our documentation.</p><a class="btn btn-dark d-none d-lg-inline-block mt-2 mr-2" href="../contact/" aria-label="Link To Contact Page" target="_blank"><i class="bi-chat-dots-fill"></i>&nbsp;&nbsp;Customer Service</a><a class="btn btn-primary d-none d-lg-inline-block mt-2" href="../documentation/" aria-label="Link To Our Documentation" target="_blank"><i class="bi-file-text-fill"></i>&nbsp;&nbsp;Documentation</a>
+              </figure>
+              <!-- End Blockquote -->
+            </div>
+            <!-- End Col -->
+  
+            <div class="col-md-8 col-lg-5 d-none d-md-block">
+              <div class="row gx-3 me-lg-n10">
+               
+                <!-- End Col -->
+  
+                <div class="col-12 mb-3">
+                  <img class="img-fluid rounded-3" src="../assets/img/950x950/framer.jpg" alt="Framer Working">
+                </div>
+                <!-- End Col -->
+  
+                <div class="col-6">
+                  <img class="img-fluid rounded-3" src="../assets/img/950x950/warehouse-cart.jpg" alt="Worker Pushing Cart">
+                </div>
+                <!-- End Col -->
+  
+                <div class="col-5">
+                  <img class="img-fluid rounded-3" src="../assets/img/950x950/man-with-scanner.jpg" alt="Man With Barcode Scanner">
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+      </div>
+      <!-- End Hero -->
+
+
+
+
+
+        <div class="container content-space-t-1 content-space-t-lg-1">
             <div class="w-lg-100 text-center mx-lg-auto mb-6">
 	<div class="wrapper">
-        <h1 class="mb-0">Our Team</h1>
+        <h2 class="mb-0">Our Team</h2>
         <label for="state" class="col-12 control-label mb-4">Find your sales representative</label>
         <form>
             <div class="form-group d-inline-block">
@@ -349,7 +399,7 @@
     </div>
     </div>
     </div>
-    </div>
+ 
     </main>
      <!-- ========== FOOTER ========== -->
  <footer class="bg-dark">
@@ -2436,7 +2486,7 @@ function employeeDetails() {
                     // Input all data for employees to table
                     /* var tblRow = "<tr>" + "<td class='vertical-align-middle'>" + '<img class="avatar avatar-lg avatar-circle" src="' + matchemp.picture + '">' + "</td>" + "<td class='vertical-align-middle'>" + '<a href="' + matchemp.linkedin + '" target="_blank">' + matchemp.name + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + matchemp.title + "</td>" + "<td class='vertical-align-middle'>" + '<a class="text-decoration-underline" href="mailto:' + matchemp.emailAddress + '">' + matchemp.emailAddress + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + '<a href="tel:' + matchemp.phoneLink + '">' + matchemp.phoneNumber + "</td>" + "</tr>";
                     $(tblRow).appendTo("#employee1"); */
-                    var tblRow = "<tr>" + "<td class='vertical-align-middle'>" + '<img class="avatar avatar-lg avatar-circle" src="' + matchemp.picture + '">' + "</td>" + "<td class='vertical-align-middle'>" + '<a href="' + matchemp.linkedin + '" target="_blank">' + matchemp.name + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + matchemp.title + "</td>" + "<td class='vertical-align-middle'>" + '<a class="text-decoration-underline iconLinkPadding" href="mailto:' + matchemp.emailAddress + '">' + '<i class="bi-envelope-fill iconResize"></i>' + "</a>" + '<a class="iconLinkPadding" href="tel:' + matchemp.phoneLink + '">' + '<i class="bi-phone-fill iconResize"></i>' + '<a class="iconLinkPadding" href="' + matchemp.linkedin + '">' + '<i class="bi-linkedin iconResize"></i>' + "</td>" + "</tr>";
+                    var tblRow = "<tr>" + "<td class='vertical-align-middle'>" + '<img class="avatar avatar-lg avatar-circle" src="' + matchemp.picture + '">' + "</td>" + "<td class='vertical-align-middle'>" + '<a href="' + matchemp.linkedin + '" target="_blank">' + matchemp.name + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + matchemp.title + "</td>" + "<td class='vertical-align-middle'>" + '<a class="text-decoration-underline iconLinkPadding" href="mailto:' + matchemp.emailAddress + '">' + '<i class="bi-envelope-fill iconResize"></i>' + "</a>" + '<a class="iconLinkPadding" href="tel:' + matchemp.phoneLink + '">' + '<i class="bi-telephone-fill iconResize"></i>' + '<a class="iconLinkPadding" href="' + matchemp.linkedin + '">' + '<i class="bi-linkedin iconResize"></i>' + "</td>" + "</tr>";
                     $(tblRow).appendTo("#employee1");
                 }
         	}
@@ -2446,8 +2496,3 @@ function employeeDetails() {
 </script>
 </body>
 </html>
-
-
-<!-- <i class="bi-envelope-fill"></i>
-<i class="bi-phone-fill"></i>
-<i class="bi-linkedin"></i> -->
