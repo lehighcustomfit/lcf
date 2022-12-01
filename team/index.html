@@ -340,7 +340,7 @@
             </div>
             <button type="button" class="btn btn-dark" value='send' id="stateID" onclick="employeeDetails()">Submit</button>
         </form>
-		<div id="pro2" class="profile2 mx-auto col-md-10" style="display: none;">
+		<div id="pro2" class="profile2 mx-auto col-md-8" style="display: none;">
 			<table class="table table-striped mx-auto mt-4" id="employee1" border="2">
 				<tbody>
 				</tbody>
@@ -2425,7 +2425,7 @@ function employeeDetails() {
 
     if (stateID != "") {
         // Add table heading
-        var tblHead = '<thead class="empStyling"><th scope="col"></th><th scope="col">CustomFit Rep</th><th scope="col">Title</th><th scope="col">Contact</th></thead>';
+        var tblHead = '<thead class="empStyling"><th scope="col"></th><th scope="col">Rep</th><th scope="col">Title</th><th scope="col">Contact</th></thead>';
         $(tblHead).appendTo("#employee1");
         for (emp in employee.EmployeeDetails) {
         	if(employee.EmployeeDetails[emp].stateID == stateID) {
