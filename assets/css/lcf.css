@@ -23445,3 +23445,7 @@ a:hover .text-inherit {
   .iconResize {
     font-size: 1.5rem!important;
   }
+
+  .iconLinkPadding {
+    padding: 0.5rem!important;
+  }
