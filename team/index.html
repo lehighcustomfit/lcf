@@ -284,7 +284,7 @@
             </div>
             <!-- End Col -->
   
-            <div class="col-md-6 col-lg-5 d-none d-md-block">
+            <div class="col-md-6 col-lg-5 d-md-block">
               <div class="row gx-3 me-lg-n10">
                
                 <!-- End Col -->
@@ -391,9 +391,7 @@
             <button type="button" class="btn btn-dark" value='send' id="stateID" onclick="employeeDetails()">Submit</button>
         </form>
 		<div id="pro2" class="profile2 mx-auto col-md-8" style="display: none;">
-			<table class="table table-striped mx-auto mt-4" id="employee1" border="2">
-				<tbody>
-				</tbody>
+			<table class="table table-hover table-light table-sm mx-auto mt-4" id="employee1">
 			</table>
 		</div>
     </div>
@@ -404,7 +402,7 @@
       </div>
       <!-- End Col -->
       <!-- End Col -->
-      <div class="col d-none d-sm-block">
+      <div class="col d-sm-block">
         <img class="img-fluid rounded-3" src="../assets/img/500x650/thorogood-closeup.jpg" alt="Person standing with Thorogood Boots">
       </div>
       <div class="col d-none d-md-block">
@@ -2488,7 +2486,7 @@ function employeeDetails() {
 
     if (stateID != "") {
         // Add table heading
-        var tblHead = '<thead class="empStyling table-light"><th scope="col"></th><th scope="col">Rep</th><th scope="col">Title</th><th scope="col">Contact</th></thead>';
+        var tblHead = '<thead class="empStyling"><th scope="col"></th><th scope="col">Rep</th><th scope="col">Title</th><th scope="col">Contact</th></thead>';
         $(tblHead).appendTo("#employee1");
         for (emp in employee.EmployeeDetails) {
         	if(employee.EmployeeDetails[emp].stateID == stateID) {
@@ -2499,7 +2497,7 @@ function employeeDetails() {
                     // Input all data for employees to table
                     /* var tblRow = "<tr>" + "<td class='vertical-align-middle'>" + '<img class="avatar avatar-lg avatar-circle" src="' + matchemp.picture + '">' + "</td>" + "<td class='vertical-align-middle'>" + '<a href="' + matchemp.linkedin + '" target="_blank">' + matchemp.name + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + matchemp.title + "</td>" + "<td class='vertical-align-middle'>" + '<a class="text-decoration-underline" href="mailto:' + matchemp.emailAddress + '">' + matchemp.emailAddress + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + '<a href="tel:' + matchemp.phoneLink + '">' + matchemp.phoneNumber + "</td>" + "</tr>";
                     $(tblRow).appendTo("#employee1"); */
-                    var tblRow = "<tr>" + "<td class='vertical-align-middle'>" + '<img class="avatar avatar-lg avatar-circle" src="' + matchemp.picture + '">' + "</td>" + "<td class='vertical-align-middle'>" + '<a href="' + matchemp.linkedin + '" target="_blank">' + matchemp.name + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + matchemp.title + "</td>" + "<td class='vertical-align-middle'>" + '<a class="text-decoration-underline iconLinkPadding" href="mailto:' + matchemp.emailAddress + '">' + '<i class="bi-envelope-fill iconResize"></i>' + "</a>" + '<a class="iconLinkPadding" href="tel:' + matchemp.phoneLink + '">' + '<i class="bi-telephone-fill iconResize"></i>' + '<a class="iconLinkPadding" href="' + matchemp.linkedin + '">' + '<i class="bi-linkedin iconResize"></i>' + "</td>" + "</tr>";
+                    var tblRow = "<tbody><tr>" + '<th scope="row" class="vertical-align-middle">' + '<img class="avatar avatar-lg avatar-circle" src="' + matchemp.picture + '">' + "</th>" + "<td class='vertical-align-middle'>" + '<a href="' + matchemp.linkedin + '" target="_blank">' + matchemp.name + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + matchemp.title + "</td>" + "<td class='vertical-align-middle'>" + '<a class="text-decoration-underline iconLinkPadding" href="mailto:' + matchemp.emailAddress + '">' + '<i class="bi-envelope-fill iconResize"></i>' + "</a>" + '<a class="iconLinkPadding" href="tel:' + matchemp.phoneLink + '">' + '<i class="bi-telephone-fill iconResize"></i>' + '<a class="iconLinkPadding" href="' + matchemp.linkedin + '">' + '<i class="bi-linkedin iconResize"></i>' + "</td>" + "</tr></tbody>";
                     $(tblRow).appendTo("#employee1");
                 }
         	}
