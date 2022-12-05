@@ -21244,7 +21244,7 @@ input[type="number"] {
 }
 
 .scrolling-image {
-    background: url("../assets/img/others/carousel1.webp") repeat-x;
+    background: url("./assets/img/others/carousel1.webp") repeat-x;
     height: 281px;
     width: 5760px;
     animation: slide 60s linear infinite;
