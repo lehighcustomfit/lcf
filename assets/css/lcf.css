@@ -21239,22 +21239,25 @@ input[type="number"] {
     -webkit-transform-origin: top center;
     transform-origin: top center;
 }
-.sliding-img {
-    width: 100%;
-    height: 281px;
+.scrolling-image-container {
     overflow: hidden;
 }
-.sliding-img-frame-to-end,
-.sliding-img-frame-to-start,
-.sliding-img-frame-to-start-sm {
-    position:absolute;
-    width: 2880px;
+
+.scrolling-image {
+    background: url("../assets/img/others/carousel1.webp") repeat-x;
     height: 281px;
-    background-size: 2880px 281px;
-    animation: sliding-img 60s linear infinite;
-    transform: translate3d(0,0,0);
+    width: 5760px;
+    animation: slide 60s linear infinite;
 }
 
+@keyframes slide {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(-2880px);
+    }
+}
 
 /* .sliding-img-frame-to-start {
     -webkit-animation: sliding-img-frame-to-start 120s linear infinite;
