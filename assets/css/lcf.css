@@ -21247,9 +21247,25 @@ input[type="number"] {
 .sliding-img-frame-to-end,
 .sliding-img-frame-to-start,
 .sliding-img-frame-to-start-sm {
+    position:absolute;
+    left: 0;
+    top: 0;
     width: 2880px;
     height: 281px;
     background-size: 2880px 281px;
+    animation: sliding-img 60s linear infinite;
+    transform: translate3d(0,0,0);
+}
+
+@keyframes sliding-img {
+    0%      { left: 0; }
+    100%    { left: -200%; }
+}
+
+@keyframes moveslidingimg {
+    100% {
+        -webkit-transform: translateX(-200%);
+    }
 }
 /* .sliding-img-frame-to-start {
     -webkit-animation: sliding-img-frame-to-start 120s linear infinite;
