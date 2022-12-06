@@ -21240,22 +21240,24 @@ input[type="number"] {
     transform-origin: top center;
 }
 .scrolling-image-container {
+    height: 281px;
+    position: relative;
     overflow: hidden;
 }
 
 .scrolling-image {
-    background: url("./assets/img/others/carousel1.webp") repeat-x;
-    height: 281px;
-    width: 5760px;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
     animation: slide 60s linear infinite;
 }
 
 @keyframes slide {
     0% {
-        transform: translate(0);
+        transform: translate(0,0);
     }
     100% {
-        transform: translate(-2880px);
+        transform: translate(-50%, 0);
     }
 }
 
