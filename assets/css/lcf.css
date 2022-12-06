@@ -18885,7 +18885,7 @@ input[type="number"] {
     position: absolute;
     left: 0;
     bottom: 0;
-    border: 0 solid rgba(22, 22, 22, 0.25);
+    border: 0 solid rgba(190, 214, 0, 0.25);
     content: "";
 }
 .list-equal-height-item::before {

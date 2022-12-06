@@ -369,11 +369,6 @@
     <img src="./assets/img/others/carousel1.webp" alt="Workplace Photo Animation"><img src="./assets/img/others/carousel1.webp" alt="Workplace Photo Animation 2">
   </div>
 </div>
-<div class="scrolling-image-container mb-3">
-  <div class="scrolling-image-reverse">
-    <img src="./assets/img/others/carousel1.webp" alt="Workplace Photo Animation"><img src="./assets/img/others/carousel1.webp" alt="Workplace Photo Animation 2">
-  </div>
-</div>
  <!-- Features -->
  <div class="overflow-hidden">
   <div class="container content-space-1 content-space-lg-1">
@@ -419,14 +414,11 @@
   </div>
 </div>
 <!-- End Features -->
-<!-- End Sliding Image -->
-<!--Uncomment the CSS for sliding-img if you want animation-->
-    <!--  <div class="scrolling-image-container mb-3">
-      <div class="scrolling-image">
-        <img src="./assets/img/others/carousel1.webp" alt="Workplace Photo Animation">
-        <img src="./assets/img/others/carousel1.webp" alt="Workplace Photo Animation 2">
-      </div>
-    </div> -->
+<div class="scrolling-image-container mb-3">
+  <div class="scrolling-image-reverse">
+    <img src="./assets/img/others/carousel1.webp" alt="Workplace Photo Animation"><img src="./assets/img/others/carousel1.webp" alt="Workplace Photo Animation 2">
+  </div>
+</div>
  
     <!-- Icon Blocks -->
     <div class="container">
@@ -505,42 +497,6 @@
     </div>
     <!-- End Features -->
 
-     <!-- Clients -->
-     <div class="container">
-      <!-- Swiper Slider -->
-      <div class="js-swiper-clients swiper text-center">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/fedex.svg" alt="FedEx Logo">
-          </div>
-          <!-- End Slide -->
-
-          <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/united-airlines.svg" alt="United Airlines Logo">
-          </div>
-          <!-- End Slide -->
-
-          <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/estes.svg" alt="Estes Logo">
-          </div>
-          <!-- End Slide -->
-
-          <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/pepsico.svg" alt="Pepsico Logo">
-          </div>
-          <!-- End Slide -->
-
-          <div class="swiper-slide">
-            <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/kellogs.svg" alt="Kellogs Logo">
-          </div>
-          <!-- End Slide -->
-        </div>
-      </div>
-      <!-- End Swiper Slider -->
-    </div>
-    <!-- End Clients -->
-
-
     <!-- Stats -->
     <div class="container content-space-1 content-space-lg-1">
       <div class="row justify-content-lg-between align-items-lg-center">
@@ -549,9 +505,38 @@
             <h2>With us, you're in good company</h2>
             <p>We provide the best managed PPE program in the industry. Companies trust us to make their jobs outfitting employees to stay safe on the job easier.</p>
           </div>
-
+          <div class="container">
+            <div class="js-swiper-clients-1 swiper text-center">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/united-airlines.svg" alt="United Airlines Logo">
+                </div>
+                <!-- End Slide -->
+      
+                <div class="swiper-slide">
+                  <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/fedex.svg" alt="FedEx Logo">
+                </div>
+                <!-- End Slide -->
+      
+                <div class="swiper-slide">
+                  <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/estes.svg" alt="Estes Logo">
+                </div>
+                <!-- End Slide -->
+      
+                <div class="swiper-slide">
+                  <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/pepsico.svg" alt="Pepsi Co Logo">
+                </div>
+                <!-- End Slide -->
+      
+                <div class="swiper-slide">
+                  <img class="avatar avatar-lg avatar-4x3" src="./assets/svg/brands/kellogs.svg" alt="Kellogs Logo">
+                </div>
+                <!-- End Slide -->
+              </div>
+            </div>
+            </div>
           <!-- Blockquote -->
-          <figure>
+          <!-- <figure>
             <blockquote class="blockquote"><em>An amazing quote from the man himself.</em></blockquote>
 
             <figcaption class="blockquote-footer">
@@ -566,7 +551,7 @@
                 </div>
               </div>
             </figcaption>
-          </figure>
+          </figure> -->
           <!-- End Blockquote -->
         </div>
         <!-- End Col -->
@@ -887,20 +872,22 @@
       new HSGoTo('.js-go-to')
       // INITIALIZATION OF SWIPER
       // =======================================================
-      var swiper = new Swiper('.js-swiper-clients',{
+      var swiper = new Swiper('.js-swiper-clients-1',{
         slidesPerView: 2,
+        autoplay: true,
+        loop: true,
         breakpoints: {
           380: {
             slidesPerView: 3,
-            spaceBetween: 15,
+            spaceBetween: 10,
           },
           768: {
-            slidesPerView: 4,
-            spaceBetween: 15,
+            slidesPerView: 3,
+            spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 5,
-            spaceBetween: 15,
+            slidesPerView: 3,
+            spaceBetween: 10,
           },
         },
       });
