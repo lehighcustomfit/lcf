@@ -21251,6 +21251,12 @@ input[type="number"] {
     white-space: nowrap;
     animation: slide 60s linear infinite;
 }
+.scrolling-image-reverse {
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slideReverse 60s linear infinite;
+}
 
 @keyframes slide {
     0% {
@@ -21258,6 +21264,14 @@ input[type="number"] {
     }
     100% {
         transform: translate(-50%, 0);
+    }
+}
+@keyframes slideReverse {
+    0% {
+        transform: translate(-50%,0);
+    }
+    100% {
+        transform: translate(0, 0);
     }
 }
 
