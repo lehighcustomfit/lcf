@@ -372,7 +372,7 @@ div.code-toolbar > .prism-light + .toolbar span:focus {
 
 @media (min-width: 767.98px) {
   .docs-navbar-sidebar-aside-body {
-    padding-top: 8.5rem !important;
+    padding-top: 8.5rem;
   }
 }
 
