@@ -368,6 +368,15 @@ div.code-toolbar > .prism-light + .toolbar span:focus {
   .docs-navbar-sidebar-container {
     max-width: 17rem;
   }
+  .docs-navbar-sidebar-aside-body {
+    position: absolute;
+  }
+}
+
+@media (max-width: 991px) {
+  .docs-navbar-sidebar-aside-body {
+    position: inherit;
+  }
 }
 
 @media (min-width: 767.98px) {

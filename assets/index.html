@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="../assets/css/lcf.css">
   <link rel="stylesheet" href="../assets/css/docs.css">
   <script src="../assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="heled0yuvkswkv3"></script>
   <script>(function (w, d, s, l, i) {
     w[l] = w[l] || []; w[l].push({
     'gtm.start':
@@ -43,24 +44,8 @@
             <a class="navbar-brand" href="../index.html" aria-label="CustomFit Home Page">
               <img class="navbar-brand-logo" src="../assets/png/logos/cf-logo.png" alt="CustomFit Logo">
             </a>
-            <a href="../documentation/changelog.html">
-              <span class="badge bg-soft-primary text-primary">v1.0</span>
-            </a>
           </div>
           <!-- End Default Logo -->
-          <div class="col-md px-lg-0">
-            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
-              <!-- Navbar -->
-              <ul class="navbar-nav p-0">
-                <li class="nav-item">
-                  <a class="btn btn-ghost-secondary" href="../contact/" target="_blank">
-                    Get Support <i class="bi-box-arrow-up-right ms-1"></i>
-                  </a>
-                </li>
-              </ul>
-              <!-- End Navbar -->
-            </div>
-          </div>
           <!-- End Col -->
         </div>
         <!-- End Row -->
@@ -81,7 +66,7 @@
       <div class="d-grid flex-grow-1 px-2">
         <button type="button" class="navbar-toggler btn btn-white" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
           <span class="d-flex justify-content-between align-items-center">
-            <span class="h3 mb-0">Nav menu</span>
+            <span class="h3 mb-0">Menu&nbsp;</span>
             <span class="navbar-toggler-default">
               <i class="bi-list"></i>
             </span>
@@ -100,9 +85,6 @@
             <a class="navbar-brand" href="../index.html" aria-label="CustomFit Home Page">
               <img class="navbar-brand-logo" src="../assets/png/logos/cf-logo.png" alt="CustomFit Logo">
             </a>
-            <a class="navbar-brand-badge" href="../documentation/changelog.html">
-              <span class="badge bg-soft-primary text-primary ms-2">v1.0</span>
-            </a>
           </div>
           <!-- End Default Logo -->
       
@@ -118,7 +100,7 @@
           <!-- End Nav -->
         </div>
 
-        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body pt-0 positionAbsolute top160">
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body pt-0 top160">
           <ul id="navbarSettings" class="nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
             <li class="nav-item">
               <span class="nav-subtitle">Documentation</span>
@@ -181,21 +163,6 @@
             <li class="nav-item">
               <a class="nav-link " href="../documentation/order-for-employees/">Order For Employee</a>
             </li>
-
-
-            <li class="nav-item my-2 my-lg-3"></li>
-
-            <li class="nav-item">
-              <small class="nav-subtitle d-block">Wellness Initiative</small>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " href="../documentation/compression-socks/">Compression Socks</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " href="../documentation/orthotics/">Orthotics</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -217,158 +184,69 @@
         </div>
         <!-- End Col -->
       </div>
-      <!-- End Row -->
-      <span class="divider-center text-cap mb-8">LOGOS</span>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 mb-6">
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/getting-started/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-accordion.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item One</h4>
-              <p class="card-text small text-body">Text here ...</p>
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+            <div class="card my-4">
+              
+                <div class="card-body px-0 pb-0 pt-0">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Brand Items
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <div id="dropbox-brand-items" style="height:500px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Marketing Emails
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <div id="dropbox-marketing-emails" style="height:500px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Company &amp; Software SVGs
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <div id="dropbox-svg-files" style="height:500px;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    CustomFit Assets
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <div id="dropbox-customfit-assets" style="height:500px;"></div>
+                  </div>
+                </div>
+              </div>
+              </div>
             </div>
-          </a>
-          <!-- End Card -->
+          </div>
         </div>
-        <!-- End Col -->
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/filters/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-alerts.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item Two</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/purchasing/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-avatars.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item Three</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/returns/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-badge.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item Four</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
       </div>
-      <!-- End Row -->
-      <span class="divider-center text-cap mb-8">FLYERS</span>
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 mb-6">
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/true-fit/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-basic-forms.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item One</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/aetrex-data/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-checks-and-switches.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item Two</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/size-guides/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-input-group.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item Three</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
       </div>
-      <!-- End Row -->
-      <span class="divider-center text-cap mb-8">VIDEOS</span>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 mb-6">
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/managing-employees/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-fslightbox.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item One</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/order-for-employees/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-swiper.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item Two</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
-      <span class="divider-center text-cap mb-8">MISCELLANEOUS</span>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5">
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/compression-socks/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-sticky-block.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item One</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-        <div class="col mb-4">
-          <!-- Card -->
-          <a class="card card-sm card-transition h-100" href="../documentation/orthotics/">
-            <img class="card-img p-2" src="../assets/svg/design-system/docs-countdown.svg" alt="Image Description">
-            <div class="card-body">
-              <h4 class="card-title text-inherit">Item Two</h4>
-              <p class="card-text small text-body">Text here ...</p>
-            </div>
-          </a>
-          <!-- End Card -->
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
     </div>
-    <!-- End Content -->
+    </div>
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
   <!-- ========== SECONDARY CONTENTS ========== -->
@@ -460,6 +338,62 @@
           }
       });
   });
+</script>
+<script>
+  var element = document.getElementById("dropbox-brand-items");
+  var options = {
+    link: "https://www.dropbox.com/sh/j2rnunfa12cu6lv/AABqPW4D9zteHkEdPIHTtQkDa?dl=0",
+    file: {
+      zoom: "fit"
+    },
+    folder: {
+      view: "list",
+      headerSize: "normal"
+    }
+  }
+  Dropbox.embed(options, element);
+</script>
+<script>
+  var element2 = document.getElementById("dropbox-marketing-emails");
+  var options = {
+    link: "https://www.dropbox.com/sh/qomh61fgthww093/AAB5pzTF-302lUN10aaoqMBJa?dl=0",
+    file: {
+      zoom: "fit"
+    },
+    folder: {
+      view: "list",
+      headerSize: "normal"
+    }
+  }
+  Dropbox.embed(options, element2);
+</script>
+<script>
+  var element3 = document.getElementById("dropbox-svg-files");
+  var options = {
+    link: "https://www.dropbox.com/sh/gc1s570n2yvxbyn/AAAA8wNio7U7uUYhMYiXkOsNa?dl=0",
+    file: {
+      zoom: "fit"
+    },
+    folder: {
+      view: "list",
+      headerSize: "normal"
+    }
+  }
+  Dropbox.embed(options, element3);
+</script>
+<script>
+  var element4 = document.getElementById("dropbox-customfit-assets");
+  var options = {
+    link: "https://www.dropbox.com/scl/fo/uvy5t5bkbpepabcko82a8/h?dl=0",
+    file: {
+      zoom: "fit"
+    },
+    folder: {
+      view: "list",
+      headerSize: "normal"
+    }
+  }
+  Dropbox.embed(options, element4);
 </script>
 </body>
 </html>

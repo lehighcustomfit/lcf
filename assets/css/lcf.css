@@ -23416,9 +23416,9 @@ a:hover .text-inherit {
   .mr-2 {
     margin-right: 0.5rem;
   }
-  .positionAbsolute {
+  /* .positionAbsolute {
     position: absolute;
-  }
+  } */
   .top160 {
     top: 160px;
   }
