@@ -21275,66 +21275,6 @@ input[type="number"] {
     }
 }
 
-/* .sliding-img-frame-to-start {
-    -webkit-animation: sliding-img-frame-to-start 120s linear infinite;
-    animation: sliding-img-frame-to-start 60s linear infinite;
-}
-.sliding-img-frame-to-start-sm {
-    -webkit-animation: sliding-img-frame-to-start-sm 120s linear infinite;
-    animation: sliding-img-frame-to-start-sm 120s linear infinite;
-}
-.sliding-img-frame-to-end {
-    -webkit-animation: sliding-img-frame-to-end 120s linear infinite;
-    animation: sliding-img-frame-to-end 120s linear infinite;
-}
-@-webkit-keyframes sliding-img-frame-to-start {
-    from {
-        background-position-x: 0;
-    }
-    to {
-        background-position-x: -2880px;
-    }
-}
-@keyframes sliding-img-frame-to-start {
-    from {
-        background-position-x: 0;
-    }
-    to {
-        background-position-x: -2880px;
-    }
-}
-@-webkit-keyframes sliding-img-frame-to-start-sm {
-    from {
-        background-position-x: -2880px;
-    }
-    to {
-        background-position-x: 0px;
-    }
-}
-@keyframes sliding-img-frame-to-start-sm {
-    from {
-        background-position-x: -2880px;
-    }
-    to {
-        background-position-x: 0px;
-    }
-}
-@-webkit-keyframes sliding-img-frame-to-end {
-    from {
-        background-position-x: 0;
-    }
-    to {
-        background-position-x: 2880px;
-    }
-}
-@keyframes sliding-img-frame-to-end {
-    from {
-        background-position-x: 0;
-    }
-    to {
-        background-position-x: 2880px;
-    }
-} */
 .step {
     position: relative;
     list-style: none;

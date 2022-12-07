@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <base href="https://lehighcustomfit.github.io/lcf/login/" />
+  <meta property="og:title" content="Lehigh CustomFit">
+  <meta name="og:description" content="The Leader in Custom Safety Footwear Programs">
+  <meta property="og:image" content="../assets/img/1920x1080/lcf-new-logo.jpg">
+  <meta name="title" content="Lehigh CustomFit | The leader in managed safety footwear programs.">
+  <meta name="description" content="Welcome to Lehigh CustomFit. Learn about our data management program.">
   <!-- Title -->
-  <title>CustomFit | Log In Portal</title>
-
-  <!-- Favicon -->
+  <title>Log In Portal | CustomFit</title>
   <link rel="shortcut icon" href="../favicon.ico">
-
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../assets/css/vendor.css">
-
-  <!-- CSS Unify Template -->
   <link rel="stylesheet" href="../assets/css/lcf.css">
+  <script src="../assets/js/jquery.min.js"></script>
+ <!-- Google Tag Manager -->
+ <script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+    'gtm.start':
+    new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); 
+    })(window, document, 'script', 'dataLayer', 'GTM-5K46SHX');</script>
+<!-- End Google Tag Manager -->
 </head>
-
 <body class="d-flex align-items-center min-h-100 bg-light">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K46SHX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main" class="flex-grow-1 overflow-hidden">
     <!-- Content -->
@@ -103,12 +113,12 @@
                   <!-- List Checked -->
                   <ul class="list-checked list-checked-primary list-py-2">
                     <li class="list-checked-item">Simple question? Check out the <a class="text-decoration-underline" href="../faq/" aria-label="FAQ Link">FAQs</a></li>
-                    <li class="list-checked-item" style="padding-top:0;">Not sure where to start? Read through our <a class="text-decoration-underline" href="../documentation/getting-started.html" aria-label="Getting Started Guide Link">getting started guide</a></li>
+                    <li class="list-checked-item" style="padding-top:0;">Not sure where to start? Read through our <a class="text-decoration-underline" href="../documentation/getting-started/" aria-label="Getting Started Guide Link">getting started guide</a></li>
                   </ul>
                   <!-- End List Checked -->
 
                   <span class="d-block">
-                    <a class="link link-pointer" href="../documentation/index.html">Need more help? Go to our documentation</a>
+                    <a class="link link-pointer" href="../documentation/">Need more help? Go to our documentation</a>
                   </span>
                 </div>
                 <!-- End Col -->
@@ -123,12 +133,7 @@
     <!-- End Content -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
-
-
-  <!-- JS Implementing Plugins -->
   <script src="../assets/js/vendor.min.js"></script>
-
-  <!-- JS Unify -->
   <script src="../assets/js/lcf.min.js"></script>
 
   <!-- JS Plugins Init. -->
@@ -149,5 +154,50 @@
       new HSTogglePassword('.js-toggle-password')
     })()
   </script>
+  <!-- LinkedIn Tracking -->
+<script type="text/javascript"> _linkedin_partner_id = "702826"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=702826&fmt=gif
+  https://dc.ads.linkedin.com/collect/?pid=702826&fmt=gif
+  " /> </noscript>
+<!-- End LinkedIn Tracking -->
+
+<!-- GA Tracking -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22942799-1']);
+  _gaq.push(['_trackPageview']);
+  (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End GA Tracking -->
+
+<!-- Base URL CF Code -->
+<script>
+  var hurl = window.location.href;
+  if (hurl.indexOf('err=true') != -1) {
+      alert('Invalid account# or password ')
+      $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
+  }
+  $(document).ready(function () {
+      $('a').each(function () {
+          var oldUrl = $(this).attr("href"); // Get current url
+          if (oldUrl.indexOf(".html") != -1) {
+              var newUrl = "https://www.customfit.me/" + oldUrl; // Create new url
+              if (window.location.hostname.indexOf("dev.customfit") != -1) {
+                  newUrl = "http://dev.customfit.me/" + oldUrl;
+              }
+              $(this).attr("href", newUrl); // Set herf value
+          }
+          else {
+              if (oldUrl.indexOf("#") != -1) {
+                  var newUrl = window.location.href + oldUrl; // Create new url
+                  $(this).attr("href", newUrl); // Set herf value
+              }
+          }
+      });
+  });
+</script>
 </body>
 </html>
