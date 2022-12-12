@@ -23426,3 +23426,7 @@ a:hover .text-inherit {
   .top160 {
     top: 160px;
   }
+  .loginLookup {
+    font-size: 0.875rem;
+    margin-bottom:0rem;
+  }

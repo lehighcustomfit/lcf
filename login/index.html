@@ -105,13 +105,12 @@
                         <div class="input-group-merge">
                         <input class="form-control form-control-lg" type="text" name="empEmail" id="empEmail" placeholder="Enter Email Address" aria-label="Enter your CustomFit Account Email Address Here" required minlength="7" required>
                         
-                        <button type="button" class="btn btn-dark btn-lg login100-form-btn width100 mt-2" value='send' id="submit" onclick="getEmpLoginInfo()">Submit</button>
+                        <button type="button" class="btn btn-dark btn-lg login100-form-btn width100 mt-4" value='send' id="submit" onclick="getEmpLoginInfo()">Submit</button>
                         </form>
 
                         <div class="col-md-12">
-                          <p id="employeeLogin"></p>
-                          <p id="employeeLocation"></p>
-                          <p id="employeeURL"></p>
+                          <p class="loginLookup mt-2" id="employeeAccountLocation"></p>
+                          <p class="loginLookup" id="employeeURL"></p>
                       </div>
                       </div>
                       
@@ -202,8 +201,7 @@
           fetch("https://albert.customfit.me/api/getEmpLoginInfo/" + empEmail + "/", requestNewOptions)
           .then(response => response.json())
           .then(data => {
-              document.getElementById('employeeLogin').innerHTML = "Account Number: " + data[0].account;
-              document.getElementById('employeeLocation').innerHTML = "Location NUmber: " + data[0].location;
+              document.getElementById('employeeAccountLocation').innerHTML = "Account/Location Number: " + data[0].account + "/" + data[0].location;
               document.getElementById('employeeURL').innerHTML = "Login URL: " + data[0].url;
           })
       })
