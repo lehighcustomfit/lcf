@@ -109,7 +109,7 @@
                         </form>
 
                         <div class="col-md-12">
-                          <p class="loginLookup mt-2" id="employeeAccountLocation"></p>
+                          <p class="loginLookup mt-4" id="employeeAccountLocation"></p>
                           <p class="loginLookup" id="employeeURL"></p>
                       </div>
                       </div>
@@ -124,7 +124,7 @@
                 </div>
                 <!-- End Col -->
                   
-                <div class="col-md-4 d-md-flex justify-content-center flex-column bg-light p-8 p-md-5" style="background-image: url(./assets/svg/components/wave-pattern.svg);">
+                <div class="col-md-4 d-md-flex justify-content-center flex-column bg-light p-8 p-md-5" style="background-image: url(../assets/svg/components/wave-pattern.svg);">
                   <h5 class="mb-4">Need help or have questions about our service? No worries, we&#39;ve got you covered.</h5>
 
                   <!-- List Checked -->
@@ -201,8 +201,9 @@
           fetch("https://albert.customfit.me/api/getEmpLoginInfo/" + empEmail + "/", requestNewOptions)
           .then(response => response.json())
           .then(data => {
-              document.getElementById('employeeAccountLocation').innerHTML = "Account/Location Number: " + data[0].account + "/" + data[0].location;
-              document.getElementById('employeeURL').innerHTML = "Login URL: " + data[0].url;
+              document.getElementById('employeeAccountLocation').innerHTML = "Account / Location Number: " + data[0].account + " / " + data[0].location;
+              let urlLoginLink = data[0].url;
+              document.getElementById('employeeURL').innerHTML = "Login: " + '<a class="text-decoration-underline" href="' + urlLoginLink + '">' + urlLoginLink + '</a>';
           })
       })
   }
