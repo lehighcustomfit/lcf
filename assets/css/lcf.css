@@ -23397,6 +23397,10 @@ a:hover .text-inherit {
     max-width: 100%!important;
   }
 
+  .width100 {
+    width: 100%!important;
+  }
+
   .vertical-align-middle {
     vertical-align: middle;
   }

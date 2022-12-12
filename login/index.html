@@ -88,7 +88,6 @@
                           <a id="changePassTarget" class="input-group-append input-group-text" href="javascript:;">
                             <i id="changePassIcon" class="bi-eye"></i>
                           </a>
-
                           <span class="invalid-feedback">Please enter a valid password.</span>
                         </div>
                       </div>
@@ -98,6 +97,25 @@
 
                       <div class="d-grid gap-4 login100-form-bgbtn">
                         <button type="submit" class="btn btn-primary btn-lg login100-form-btn">Sign In</button>
+                      </form>
+                      
+                      <span class="divider-center text-muted mb-1">NEED YOUR LOGIN URL?</span>
+                      <form method="POST">
+                        <label class="form-label" for="empEmail">CustomFit Account Email</label>
+                        <div class="input-group-merge">
+                        <input class="form-control form-control-lg" type="text" name="empEmail" id="empEmail" placeholder="Enter Email Address" aria-label="Enter your CustomFit Account Email Address Here" required minlength="7" required>
+                        
+                        <button type="button" class="btn btn-dark btn-lg login100-form-btn width100 mt-2" value='send' id="submit" onclick="getEmpLoginInfo()">Submit</button>
+                        </form>
+
+                        <div class="col-md-12">
+                          <p id="employeeLogin"></p>
+                          <p id="employeeLocation"></p>
+                          <p id="employeeURL"></p>
+                      </div>
+                      </div>
+                      
+
                         <span class="divider-center text-muted mb-1">OR</span>
                         <p class="card-text text-muted">Don't have an account yet? <a class="link" href="../team/">Talk to one of our reps</a></p>
                       </div>
@@ -154,6 +172,44 @@
       new HSTogglePassword('.js-toggle-password')
     })()
   </script>
+
+<script>
+  function getEmpLoginInfo() {
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+      var urlencoded = new URLSearchParams();
+      var cf_token;
+      urlencoded.append("username", "apiklaviyo");
+      urlencoded.append("password", "lcftrack783");
+      urlencoded.append("grant_type", "password");
+      var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: urlencoded,
+      redirect: 'follow'
+      };
+      fetch("https://albert.customfit.me/token", requestOptions)
+      .then(response => response.json())
+      .then(result => {cf_token = result.access_token
+          var newHeaders = new Headers();
+          newHeaders.append("Authorization", "Bearer " + cf_token + "");
+          var requestNewOptions = {
+              method: 'GET',
+              headers: newHeaders,
+              redirect: 'follow'
+          };
+          let empEmail = document.getElementById("empEmail").value;
+          fetch("https://albert.customfit.me/api/getEmpLoginInfo/" + empEmail + "/", requestNewOptions)
+          .then(response => response.json())
+          .then(data => {
+              document.getElementById('employeeLogin').innerHTML = "Account Number: " + data[0].account;
+              document.getElementById('employeeLocation').innerHTML = "Location NUmber: " + data[0].location;
+              document.getElementById('employeeURL').innerHTML = "Login URL: " + data[0].url;
+          })
+      })
+  }
+</script>
+
   <!-- LinkedIn Tracking -->
 <script type="text/javascript"> _linkedin_partner_id = "702826"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=702826&fmt=gif
   https://dc.ads.linkedin.com/collect/?pid=702826&fmt=gif
