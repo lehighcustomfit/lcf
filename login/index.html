@@ -39,13 +39,7 @@
       <div class="mx-lg-auto" style="max-width: 55rem;">
         <div class="d-flex justify-content-center align-items-center flex-column min-vh-lg-100">
           <!-- ========== HEADER ========== -->
-          <header id="header" class="navbar navbar-height navbar-light mb-3">
-            <div class="container">
-              <a class="navbar-brand mx-auto" href="../index.html" aria-label="Unify">
-                <img class="navbar-brand-logo" src="../assets/png/logos/cf-logo.png" alt="CustomFit Logo">
-              </a>
-            </div>
-          </header>
+         
           <!-- ========== END HEADER ========== -->
 
           <div class="position-relative">
@@ -60,7 +54,11 @@
                     <!-- Form -->
                     <form method="post" action="https://www.customfit.me/process.aspx" class="login100-form validate-form" novalidate>
                       <div class="text-center">
+                        <a class="navbar-brand mx-auto" href="../index.html" aria-label="Lehigh CustomFit">
+                          <img class="navbar-brand-logo mb-4" src="../assets/png/logos/cf-logo.png" alt="CustomFit Logo">
+                        </a>
                         <div class="mb-5">
+                          
                           <h3 class="card-title">Log In To CustomFit</h3>
                         </div>
                       </div>
@@ -111,6 +109,7 @@
                         <div class="col-md-12">
                           <p class="loginLookup mt-4" id="employeeAccountLocation"></p>
                           <p class="loginLookup" id="employeeURL"></p>
+                          <p class="loginLookup" id="noAccountFound"></p>
                       </div>
                       </div>
                       
@@ -174,6 +173,9 @@
 
 <script>
   function getEmpLoginInfo() {
+    document.getElementById('employeeAccountLocation').innerHTML = '';
+    document.getElementById('employeeURL').innerHTML = '';
+    document.getElementById('noAccountFound').innerHTML = '';
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
       var urlencoded = new URLSearchParams();
@@ -201,9 +203,15 @@
           fetch("https://albert.customfit.me/api/getEmpLoginInfo/" + empEmail + "/", requestNewOptions)
           .then(response => response.json())
           .then(data => {
+            if (data.length === 1) {
               document.getElementById('employeeAccountLocation').innerHTML = "Account / Location Number: " + data[0].account + " / " + data[0].location;
               let urlLoginLink = data[0].url;
-              document.getElementById('employeeURL').innerHTML = "Login: " + '<a class="text-decoration-underline" href="' + urlLoginLink + '">' + urlLoginLink + '</a>';
+              console.log(urlLoginLink);
+              document.getElementById('employeeURL').innerHTML = "Login: " + '<a class="text-decoration-underline" href="http://' + urlLoginLink + '">' + urlLoginLink + '</a>';
+            }
+            else if (data.length === 0) {
+              document.getElementById('noAccountFound').innerHTML = "No account was found with the provided email address. Please contact customer service for further help.";
+            }
           })
       })
   }
