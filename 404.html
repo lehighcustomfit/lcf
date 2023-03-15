@@ -4,7 +4,7 @@
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <base href="https://lehighcustomfit.github.io/lcf/" />
+  <base href="https://rockybrands.github.io/customfit/" />
   <meta property="og:title" content="Lehigh CustomFit">
   <meta name="og:description" content="The Leader in Custom Safety Footwear Programs">
   <meta property="og:image" content="../assets/img/1920x1080/lcf-new-logo.jpg">
@@ -108,9 +108,8 @@
 
   <!-- JS Implementing Plugins -->
   <script src="./assets/js/vendor.min.js"></script>
-
-  <!-- JS Unify -->
   <script src="./assets/js/lcf.min.js"></script>
+  <script src="./assets/js/fixURL.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -135,33 +134,5 @@
   })();
 </script>
 <!-- End GA Tracking -->
-
-<!-- Base URL CF Code -->
-<script>
-  var hurl = window.location.href;
-  if (hurl.indexOf('err=true') != -1) {
-      alert('Invalid account# or password ')
-      $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
-  }
-  $(document).ready(function () {
-      $('a').each(function () {
-          var oldUrl = $(this).attr("href"); // Get current url
-          if (oldUrl.indexOf(".html") != -1) {
-              var newUrl = "https://www.customfit.me/" + oldUrl; // Create new url
-              if (window.location.hostname.indexOf("dev.customfit") != -1) {
-                  newUrl = "http://dev.customfit.me/" + oldUrl;
-              }
-              $(this).attr("href", newUrl); // Set herf value
-          }
-          else {
-              if (oldUrl.indexOf("#") != -1) {
-                  var newUrl = window.location.href + oldUrl; // Create new url
-                  $(this).attr("href", newUrl); // Set herf value
-              }
-          }
-      });
-  });
-</script>
-<!-- End Base URL CF Code -->
 </body>
 </html>
